@@ -1,0 +1,102 @@
+/* styling for main skeleton loading  */
+.postSk {
+  width: 274px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  animation: skeleton 1s ease infinite alternate;
+}
+
+@keyframes skeleton {
+  to {
+    opacity: 0.5;
+  }
+}
+
+.postSkImg {
+  background-color: #313131;
+  width: 274px;
+  height: 153px;
+}
+
+.postSkInfo {
+  display: flex;
+  margin-top: 15px;
+}
+.postSkAvatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #313131;
+  /* object-fit: cover; */
+  margin-right: 10px;
+}
+
+.postSkDetail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.postSkText {
+  background-color: #313131;
+  width: 90%;
+  height: 18px;
+  margin-bottom: 5px;
+}
+
+.sm {
+  width: 50%;
+}
+
+/* Styling for circle loading */
+.circle,
+.custom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fas {
+  color: lightblue;
+  font-size: 30px;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Styling for custom loading */
+.custom {
+  flex-direction: column;
+}
+
+.balls {
+  display: flex;
+}
+
+.ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  margin-right: 10px;
+  animation: ball 0.5s ease infinite alternate;
+}
+.ball2 {
+  animation-delay: 0.1s;
+}
+.ball3 {
+  animation-delay: 0.2s;
+}
+@keyframes ball {
+  to {
+    transform: translateY(-10px);
+  }
+}
+.loading {
+  font-weight: 100;
+}

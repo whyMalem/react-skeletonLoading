@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  background-color: #181818;
+  /* color: white; */
+  min-height: 100vh;
+}
+.home {
+  width: 100%;
+  /* padding: 50px; */
+}
